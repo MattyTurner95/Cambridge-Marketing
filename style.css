@@ -1,1 +1,192 @@
+/* Avoid Flash of Unstyled Content */
+.is-slogan {
+  visibility: hidden
+}
 
+.transition_wrap {
+  display: flex;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #0d0d0d;
+  background: #ffff00;
+}
+
+::selection {
+  color: #0d0d0d;
+  background: #ffff00;
+}
+
+.hero-glow {
+  display: block;
+}
+
+.hero-bg {
+  display: block;
+}
+
+.Cursor-Wrap {
+  display: flex !important;
+}
+
+.flickity-viewport {
+  width: 100%;
+  overflow: visible !important;
+}
+
+.flickity-button {
+  display: none;
+}
+
+.nav {
+  position: fixed;
+  /* Keeps the nav at the top */
+  width: 100%;
+  /* Full width */
+  transition: top 0.8s;
+  /* Smooth transition for the top property */
+}
+
+div.Nav-Text {
+  text-decoration: none !important;
+  /* This is the spell that removes the underline */
+}
+
+.cursor_wrapper {
+  pointer-events: none;
+}
+
+.hover_component:hover .cursor_wrapper {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#home-hero-glow {
+  transition: left 0.3s ease, top 0.3s ease;
+  /* Adjust the timing to control speed */
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  svg {
+    width: 8vw !important;
+  }
+}
+
+@keyframes growShrink {
+
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+
+  50% {
+    transform: scaleX(1.85);
+    /* Increase length by 85% */
+  }
+}
+
+#Top,
+#Middle,
+#Bottom {
+  animation: growShrink 2s ease-in-out infinite;
+  transform-origin: left;
+  /* Adjust if you want scaling to be centered or to the right */
+}
+
+#Top {
+  animation-delay: 0s;
+  /* No delay for the first line */
+}
+
+#Middle {
+  animation-delay: 0.2s;
+  /* Slight delay for the second line */
+}
+
+#Bottom {
+  animation-delay: 0.4s;
+  /* More delay for the third line */
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.nav-parent {
+  -webkit-perspective: <some value> !important;
+  -webkit-backface-visibility: none !important;
+  -webkit-transform-style: preserve !important;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.burger-menu-parent {
+  -webkit-perspective: <some value> !important;
+  -webkit-backface-visibility: none !important;
+  -webkit-transform-style: preserve !important;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.flex-cc-h.menu {
+  -webkit-perspective: <some value> !important;
+  -webkit-backface-visibility: none !important;
+  -webkit-transform-style: preserve !important;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+@media screen and (min-width: 1600px) {
+  .tab-txt-wrap {
+    height: 80px;
+  }
+
+  .tab-title {
+
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .nav {
+    height: 140px;
+  }
+
+  .burger-menu-parent {
+    padding: 15px;
+  }
+
+}
+
+.letter {
+  display: inline-block;
+}
+
+.tricksword {
+  white-space: nowrap;
+}
+
+.flickity-viewport {
+  width: 100%;
+  overflow: visible !important;
+}
+
+.flickity-button {
+  display: none;
+}
